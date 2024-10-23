@@ -1,29 +1,29 @@
-// // Multidimensional Arrays ;
+// Multidimensional Arrays ;
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int arr[2][3] = {{1,2,3}, {4,5,6}};
+int main(){
+    int arr[2][3] = {{1,2,3}, {4,5,6}};
 
-//     printf("%d\n", arr[0][2]);
-//     printf("%d", arr[1][0]);
+    printf("%d\n", arr[0][2]);
+    printf("%d", arr[1][0]);
 
-//     return 0;
-// }
+    return 0;
+}
 
-// //
-// #include <stdio.h>
-// int main(){
-//     int arr[2][3] = {{1,2,3}, {4,5,6}};
+//
+#include <stdio.h>
+int main(){
+    int arr[2][3] = {{1,2,3}, {4,5,6}};
 
-//     arr[0][2] = 9;
-//     arr[1][0] = 16;
+    arr[0][2] = 9;
+    arr[1][0] = 16;
 
-//     printf("%d\n", arr[0][2]);
-//     printf("%d", arr[1][0]);
+    printf("%d\n", arr[0][2]);
+    printf("%d", arr[1][0]);
 
-//     return 0;
-// }
+    return 0;
+}
 
 //
 #include <stdio.h>

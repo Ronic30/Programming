@@ -1,0 +1,37 @@
+.con{
+    border: 2px solid black;
+    height: 300px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.box{
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+}
+
+.b1{
+    background-color: bisque;
+
+}
+
+.b1:hover{
+    transform: rotate(180deg);
+    background-color: aquamarine;
+    transition: background-color, transform, 4s, ease-in-out, 0.5s;
+}
+
+.b2:hover{
+    transform: scale(1.5);
+    background-color: blanchedalmond;
+    transition:  4s, ease-in-out, 0.5s;
+}
+
+.b3:hover{
+    transform: translate(100%);
+    background-color: aquamarine;
+}

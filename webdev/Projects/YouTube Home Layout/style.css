@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15,15,15);
+}
+
+.nav_bar{
+    display: flex;
+    flex-direction: column;
+}
+
+/* navbar css */
+.nav0{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+
+/* navbar group 1 css */
+.nav01{
+    width: 128px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items:center ;
+    padding: 18px 14px 18px 14px;
+}
+
+/* navbar group 2 css */
+.nav02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    padding: 0px 20px;
+}
+
+.search_b{
+    display: flex;
+    flex-direction: row;
+}
+
+.search{
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 40px 0 0 40px;
+    width: 500px;
+    display: inline-flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search01{
+    color: rgb(158, 156, 156);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;      
+
+}
+
+.s_bar{
+    border-radius: 40px 0px 0px 40px;
+    border: solid rgb(63, 63, 63);
+    width: 500px;
+    height: 45px;
+}
+
+.icon_s{
+
+    position: relative;
+    background-color: rgb(34,34,34);
+    right: 3px;
+    border: 2px solid rgb(34,34,34);
+    border-radius: 0 40px 40px 0;
+    height: 41px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voice_s{
+    border: 1px solid rgb(44, 43, 43);
+    border-radius: 25px ;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(39, 38, 38);;
+}
+
+.voice{
+    color:rgb(34,34,34) ;
+}
+
+/* nav bar group 3 css */
+
+.nav03{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.create01, .noti01, .account{
+    height: 28px;
+    width: 28px;
+
+}
+
+/* side bar and Recommendation area of navbar */
+
+.bar{
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.nav1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.reco{
+    border: 1px solid rgb(39,39,39);
+    border-radius: 10px;
+    background-color: rgb(39,39,39);
+    padding: 5px 8px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;  
+}
+
+/* Content section  */
+
+.content{
+    /* border: 2px solid rgb(0, 255, 170); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.vid1, .vid2, .vid3, .vid4, .vid5, .vid6{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin: 20px 10px;
+
+}
+
+.thum{
+    width: 360px;
+    border-radius: 20px;
+}
+
+.pp{
+    width: 40px;
+    border-radius: 25px;   
+}
+
+.vid1_2, .vid2_2, .vid3_2, .vid4_2, .vid5_2, .vid6_2{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.font{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;   
+    color: white;
+}
+
+.more{
+    width: 30px;
+}
+
+.x1, .x1_1{
+    margin: 5px;
+}
+
+.a1{
+    font-size: 15px;
+    color: rgb(190, 189, 189);
+}
+
+a{
+    text-decoration: none;
+}
+
+.main_ch:hover{
+    color: rgb(255, 255, 255);
+}

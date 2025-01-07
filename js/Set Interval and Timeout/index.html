@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box, .box2 {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+        <div class="box2">
+            BOX
+        </div>
+    </div>
+    <script>
+        setInterval(() => {
+            document.querySelector(".box").style.background = "red";
+        }, 2000);
+
+        setTimeout(() => {
+            document.querySelector(".box2").style.background = "red";
+        }, 2000);
+
+        setInterval(function () {
+            console.log("This will run every second.");
+        }, 1000);
+
+        setTimeout(function () {
+            console.log("This will run once after 2 seconds.");
+        }, 2000);
+    </script>
+</body>
+
+</html>

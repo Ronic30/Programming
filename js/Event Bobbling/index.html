@@ -33,8 +33,8 @@
 
     <script>
         document.querySelector(".child").addEventListener("click",()=>{alert("Child is Clicked")});
-        document.querySelector(".childcontainer").addEventListener("click",(e)=>{ e.stopPropagation().alert("Childcontainer is Clicked")});
-        document.querySelector(".container").addEventListener("click",()=>{alert("Container is Clicked")});
+        document.querySelector(".childcontainer").addEventListener("click",()=>{alert("Childcontainer is Clicked")});
+        document.querySelector(".container").addEventListener("click",()=>{document.querySelector(".container").setAttribute("style","background-color:blue")});
     </script>
 </body>
 </html>

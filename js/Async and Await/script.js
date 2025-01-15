@@ -1,4 +1,4 @@
-  async function getData(){
+async function getData(){
     return new Promise((resolve,reject) => {
         setTimeout(() =>{
             console.log("Signed in Successfully")

@@ -1,40 +1,65 @@
-async function a(){ 
+async function load1() {
     return new Promise((resolve, reject) => {
-    setTimeout(() =>{
-        resolve("Intializing Hacking",)
-    }, 2000)
-})
+        setTimeout(() => {
+            console.log(".")
+        },500)
+    })
 }
-async function b(){ 
+async function load2() {
     return new Promise((resolve, reject) => {
-    setTimeout(() =>{
-        resolve("Reading your Files")
-    }, 2000)
-})
+        setTimeout(() => {
+            console.log(".")
+        },500)
+    })
 }
-async function c(){ 
+async function load3() {
     return new Promise((resolve, reject) => {
-    setTimeout(() =>{
-        resolve("Password files Detected")
-    }, 2000)
-})
-}
-async function d(){ 
-    return new Promise((resolve, reject) => {
-    setTimeout(() =>{
-        resolve("Sending all passwords and personal files to server")
-    }, 2000)
-})
-}
-async function e(){ 
-    return new Promise((resolve, reject) => {
-    setTimeout(() =>{
-        resolve("Cleaning up")
-    }, 2000)
-})
+        setTimeout(() => {
+            console.log(".")
+        },500)
+    })
 }
 
-async function oupt(){
+
+
+
+async function a() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Intializing Hacking")
+        }, 2000)
+    })
+}
+async function b() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Reading your Files")
+        }, 2000)
+    })
+}
+async function c() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Password files Detected")
+        }, 2000)
+    })
+}
+async function d() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Sending all passwords and personal files to server")
+        }, 2000)
+    })
+}
+async function e() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Cleaning up")
+        }, 2000)
+    })
+}
+
+async function oupt() {
     let aa = await a()
     console.log(aa)
     let bb = await b()

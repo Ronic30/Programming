@@ -1,0 +1,37 @@
+.con1{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 2px solid red;
+    height: 400px;
+    width: 500px;
+    margin: 50px;
+}
+
+.x1{
+    height: 400px;
+    width: 500px;
+    object-fit: contain;
+}
+
+.x2{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.x3{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    object-position: top left ;
+}
+
+.x4{
+    height: 400px;
+    width: 500px;
+}

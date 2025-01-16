@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Lets Start")
+
+        proms = new Promise((resolve, reject) => {
+            num = Math.ceil(1 + Math.random() * 100)
+            if (num < 50) {
+                console.log("Number is less than 5")
+                resolve("Resolved")
+            }
+            else {
+                console.log("Number is greater than 5")
+                reject("Rejected")
+            }
+        })
+
+        proms.then((a) => {console.log(a)}).catch((b) => (console.log()))
+    </script>
+</body>
+
+</html>

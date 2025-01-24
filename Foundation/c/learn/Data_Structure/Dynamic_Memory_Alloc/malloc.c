@@ -19,9 +19,9 @@ int main(){
         return 1;
     }
 
-    *prt = 42;
+    *prt = 52;
 
-    printf("Value Stored in prt : ", *prt);
+    printf("Value Stored in prt : %d", *prt);
 
     free(prt);
 

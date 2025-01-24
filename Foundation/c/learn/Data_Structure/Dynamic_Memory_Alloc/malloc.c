@@ -23,5 +23,7 @@ int main(){
 
     printf("Value Stored in prt : ", *prt);
 
+    free(prt);
+
     return 0;
 }

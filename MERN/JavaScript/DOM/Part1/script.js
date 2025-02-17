@@ -21,5 +21,4 @@ document.body.firstElementChild.children[2].previousSibling
 document.body.firstElementChild.children[2].previousElementSibling
 document.body.firstElementChild.children[2].nextSibling
 document.body.firstElementChild.children[2].nextElementSibling
-
 document.body.firstElementChild.children[2].parentElement

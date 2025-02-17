@@ -27,11 +27,13 @@ int delete(){
     }
     else{
         item = queue[front];
-        if (front == rear) { // Handle deleting the last element
+        if (front == rear) { 
             front = -1;
-            rear = -1;}
+            rear = -1;
+        }
         else{
-        front = (front + 1) % MAXSIZE;}
+        front = (front + 1) % MAXSIZE;
+    }
     return item;
     }
 }
@@ -46,7 +48,7 @@ void traverse(){
         do {
             printf("%d\n", queue[i]);
             i = (i + 1) % MAXSIZE;
-        } while (i != (rear + 1) % MAXSIZE); // Correct loop condition
+        } while (i != (rear + 1) % MAXSIZE);
     }
 }
     

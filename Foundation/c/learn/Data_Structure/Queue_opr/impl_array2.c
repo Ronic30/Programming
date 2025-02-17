@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#define MAX_SIZE 100
+#define MAX_SIZE 5
 
 int queue[MAX_SIZE];
-int front = -1, rear = -1;
+int front = -1;
+int rear = -1;
 
 int isFull(){
     return(rear == MAX_SIZE - 1);
@@ -15,7 +15,7 @@ int isEmpty(){
 
 void enqueue(int value){
     if(isFull()){
-        printf("Queue os Full!\n");
+        printf("Queue is Full!\n");
     }
     else{
         if(front == -1) front = 0;
@@ -26,22 +26,27 @@ void enqueue(int value){
 
 int dequeue(){
     if(isEmpty()){
-        printf("Queue is Empty! \n");
+        printf("Queue is Empty!\n");
         return -1;
     }
-    else{
-        int dequeuedValue = queue[front];
-        front = front + 1;
-        return dequeuedValue;
-    }
+    int dequeued_value = queue[front];
+    front = front + 1;
+    return dequeued_value;
 }
 
-int peek(){
+int traverse(){
     if(isEmpty()){
-        printf("Queue is Empty! \n");
+        printf("Queue is Empty!\n");
         return -1;
     }
-    return queue[front];
+    int count = 0;
+    for(int i = front; i <= rear; i++){
+        printf("%d ", queue[i]);
+        count++;
+    }
+    printf("\n");
+    printf("Total Elements in a Queue : %d", count);
+
 }
 
 int main(){
@@ -49,11 +54,11 @@ int main(){
     enqueue(20);
     enqueue(30);
     
-    printf("Front element: %d\n", peek());
-
-    printf("Dequeued: %d\n", dequeue());
-
-    printf("Front element: %d\n", peek());
+    printf("Queue after Enqueue :");
+    traverse();
+    printf("\n");
+    printf("Queue after Dequeue : ", dequeue());
+    traverse();
 
     return 0;
 }

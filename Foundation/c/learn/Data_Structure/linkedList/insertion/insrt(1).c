@@ -13,7 +13,7 @@ void traverse(struct node * prt){
     }
 }
 
-struct node * insrtAtBeginning(struct node * head){
+struct node * insrtAtStrt(struct node * head){
     struct node * newNode;
     newNode = (struct node *)malloc(sizeof(struct node));
     newNode -> data = 1;
@@ -36,7 +36,7 @@ int main(){
     third -> data = 300;
     third -> next = NULL;
     
-    head = insrtAtBeginning(head);
+    head = insrtAtStrt(head);
     traverse(head);
     
     return 0;

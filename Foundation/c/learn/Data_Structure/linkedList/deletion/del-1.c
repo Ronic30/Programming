@@ -13,22 +13,10 @@ void traverse(struct node * prt){
     }
 }
 
-struct node * insrtAtIndx(struct node * head, int index){
-    struct node * newNode;
-    newNode = (struct node *)malloc(sizeof(struct node));
-    int i = 0;
-    struct node * temp = head;
-    
-    while(i != index - 1){
-        temp = temp -> next;
-        i++;
-    }
-    
-    newNode -> data = 1;
-    newNode -> next = temp -> next;
-    temp -> next = newNode;
-    
+struct node * delFromStrt(struct node * head){
+    head = head -> next;
 }
+
 
 int main(){
     
@@ -45,7 +33,7 @@ int main(){
     third -> data = 300;
     third -> next = NULL;
     
-    head = insrtAtIndx(head, 1);
+    head = delFromStrt(head);
     traverse(head);
     
     return 0;

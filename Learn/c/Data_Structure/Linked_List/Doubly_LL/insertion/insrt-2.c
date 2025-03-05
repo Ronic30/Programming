@@ -14,10 +14,10 @@ struct node * traverse(struct node * prt){
     }
 }
 
-struct node * insrtAftr(struct node * prevNode, int data){
+struct node * insrtAftr(struct node * head, int data){
     struct node * newNode;
     newNode = (struct node *)malloc(sizeof(struct node));
-    
+    struct node * prevNode = head;
     newNode -> data = data;
     newNode -> next = prevNode -> next;
     newNode -> prev = prevNode;

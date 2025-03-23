@@ -26,12 +26,18 @@ int binarysrch(int arr[], int size, int element)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7};
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
     int size = sizeof(arr) / sizeof(int);
-    int element = 17;
+    int element = 7;
 
     int result = binarysrch(arr, size, element);
-    printf("The Element %d was found at index %d \n", element, result);
+
+    if(result == -1){
+        printf("Element not Found!");
+    }
+    else{
+        printf("The Element %d was found at index %d \n", element, result);
+    }
 
     return 0;
 }

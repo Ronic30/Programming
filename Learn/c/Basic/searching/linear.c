@@ -16,11 +16,17 @@ int main()
 {
     int arr[] = {1, 5, 2, 8, 4, 12, 3};
     int size = sizeof(arr) / sizeof(int);
-    int element = 11;
+    int element = 18;
 
     int result = linearsrch(arr, size, element);
 
-    printf("We found the Element %d at %d", element, result);
+    if (result == -1){
+        printf("Element not Found!");
+    }
+
+    else{
+        printf("We found the Element %d at %d", element, result);
+    }
 
     return 0;
 }

@@ -5,12 +5,12 @@ void selection(int array[], int size){
         int smallest = i;
         for( int j=i+1; j<size; j++){
             if(array[smallest] > array[j]){
-                int smallest = j;
+                smallest = j;
             }
         }
-        int temp = smallest;
-        smallest = array[i];
-        array[i] = temp;
+        int temp = array[i];
+        array[i] = array[smallest];
+        array[smallest] = temp;
     }
 }
 
@@ -25,7 +25,7 @@ int main(){
     int size = sizeof(array)/sizeof(array[0]);
 
     selection(array, size);
-    out(array,size);
+    out(array,  size);
 
     return 0;
 }

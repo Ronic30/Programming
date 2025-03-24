@@ -19,6 +19,8 @@ struct node * insrtAtStrt(struct node * head){
     newNode -> data = 1;
     newNode -> next = head;
     head = newNode;
+
+    return head;
 }
 
 int main(){

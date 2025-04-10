@@ -1,57 +1,30 @@
-# List: Ordered, Mutable, Allow duplicates.
+items = ["cars", "bike", 365, 234, 100, "truck"]
+items[2] = "super bike"
+print(items)
 
-ages = [19, 26, 29]
-print(ages)
-print('Total items : ', len(ages))
+items.append("Papu")
+print(items)
 
-info = ['Jack', 32, 'Computer Science', [2, 4]]
-print('Student Name : ', info[0])
-print('Course : ', info[2])
-print('Student Age : ', info[-3])
+num = [23, 45,12, 0, 1, 104]
+# num.sort()
+# num.reverse()
+# num.insert(4, 1000)
+# print(num.pop(2))
+#num.remove(104)
+del num[1]
+print(num)
 
-# Slicing in list :
+fruits = []
 
-lists = ['a', 'b', 'c', 'd', 'e', 'f']
-print(lists[1:4])
-print(lists[1:-2])
-print(lists[3:])
-print(lists[:-2])
+a1 = input("Enter a Fruit name :")
+fruits.append(a1)
+a2 = input("Enter a Fruit name :")
+fruits.append(a2)
+a3 = input("Enter a Fruit name :")
+fruits.append(a3)
+a4 = input("Enter a Fruit name :")
+fruits.append(a4)
+a5 = input("Enter a Fruit name :")
+fruits.append(a5)
 
-# Adding Elemnents in a List :
-
-fruits = ['Apple', 'Banana', 'Orange']
-print('Before : ', fruits)
-
-fruits.append('Cherry')
-print('After : ', fruits)
-
-# Adding Element at a Specific Index :
-
-student = ['Rahul', 'Shyam', 'Ramu']
-print('Before : ', student)
-
-student.insert(2, 'Chintu')
-print('After : ', student)
-
-# Changing the List Items :
-
-colors = ['Red', 'Blue', 'Black']
-print('Before : ', colors)
-
-colors[1] = 'Orange'
-colors[2] = 'White'
-print('After : ', colors)
-
-# Removing Item from the List :
-
-info1 = ['Back', 20, 'Computer Application', [2, 4]]
-print('Before : ', info1)
-
-del info1[2:4]
-print('After : ', info1)
-
-# Iterating through a List :
-
-colors = ['Red', 'Blue', 'Black']
-for i in colors:
-    print(i)
+print(fruits)

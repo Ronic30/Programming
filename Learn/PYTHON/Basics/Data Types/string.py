@@ -60,3 +60,20 @@ h4 = "kya haal hai bhai ke!"
 print("haal" in h4)
 print("hello" in h4)
 print("bhai" in h4)
+
+# string lenght
+a9 = "geeks"
+print(len(a9))
+
+count = 0
+for char in a9:
+    count += 1
+print(count)
+
+# string to int conversion :
+
+sn = "100"
+print(type(sn))
+
+sn_to_int = int(sn)
+print(type(sn_to_int))

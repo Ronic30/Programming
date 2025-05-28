@@ -117,6 +117,7 @@ int main()
 {
     struct node *root = NULL;
     root = insert(root, 30);
+    int size = 
 
     insert(root, 60);
     insert(root, 25);

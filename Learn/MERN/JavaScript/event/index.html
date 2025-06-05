@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            border: 4px solid red;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+    <input id="rec" type="button" value="rectangle">
+    <input id="cir" type="button" value="circle">
+
+
+    <script>
+
+        document.querySelector("#rec").addEventListener("click", () => {
+            document.querySelector(".item").setAttribute("style", " height: 50px ; width: 100px;")
+        })
+
+        document.querySelector("#cir").addEventListener("click", () => {
+            document.querySelector(".item").setAttribute("style", "height: 50px ; width: 50px; border-radius: 32px")
+        })
+    </script>
+</body>
+</html>
